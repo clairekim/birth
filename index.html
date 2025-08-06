@@ -14,20 +14,56 @@
 
   <style>
     body {
-      padding: 10px;
-      background-color: peachpuff;
+      padding: 100px 10px;
+      box-sizing: border-box;
+      background-image: url('images/bg/bg-top.jpg'), url('images/bg/bg-bottom.jpg');
+      background-repeat: no-repeat;
+      background-position: top center, bottom center;
+      background-size: contain;
+      background-attachment: fixed;
+      font-family: serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3532;
+    }
+
+    .info {
+      text-align: center;
+      color: #6c7e72;
+    }
+
+    .text {
+      color: #6c7e72;
+    }
+
+    .img {
+      margin-bottom: 50px;
+    }
+
+    .img img {
+      border-radius: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
     }
 
     h2 {
       margin-bottom: 10px;
+      color: #2c3532;
+      font-size: 20px;
     }
 
     img {
       max-width: 100%;
     }
 
+    .box {
+      margin: 30px 0;
+      border-bottom: 1px solid #6c7e72;
+    }
+
     .swiper {
-      margin-bottom: 5em;
+      margin-bottom: 40px;
       background-color: #f2f2f2;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
@@ -35,7 +71,7 @@
 
     .swiper-slide {
       width: 100%;
-      aspect-ratio: 1 / 1.3;
+      aspect-ratio: 1 / 1.2;
     }
 
     .swiper-slide img {
@@ -53,81 +89,99 @@
 
 <body>
   <h1>서유와 서진이의 첫 생일</h1>
-  <p>2025년 8월 10일(일) 12:00 머큐어 마곡 모아시스<br>서유와 서진이의 성장사진 구경하고 가세요.</p>
-
-  <h2>뉴본</h2>
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+  <div class="box">
+    <p class="info">서유와 서진이가 돌을 맞았어요. <br>모아시스에 와주셔서 함께 축하해 주세요.</P>
+    <p class="img"><img src="images/welcome2.jpg"></p>
+  </div>
+  <div class="box">
+    <h2>약도</h2>
+    <p class="info"><img src="images/bg/map.jpg"></p>
+    <p class="info">2025년 8월 10일(일) 12:00 머큐어 마곡 모아시스</p>
+    <p class="info">지하철 9호선&공항철도 마곡나루역 6번 출구 연결<br>
+      지하철 5호선 마곡역 1번 출구 도보 10분거리</p>
+  </div>
+  <div class="box">
+    <h2>뉴본</h2>
+    <p class="text">서유와 서진이가 태어난지 일주일 정도 되었어요.</p>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/0/1.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/2.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/3.jpg"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 
-  <h2>50일</h2>
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+  <div class="box">
+    <h2>50일</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/0/1.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/2.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/3.jpg"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 
-  <h2>100일</h2>
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
-      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+  <div class="box">
+    <h2>100일</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/0/1.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/2.jpg"></div>
+        <div class="swiper-slide"><img src="images/0/3.jpg"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 
-  <h2>돌사진</h2>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/365/1.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/2.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/3.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/4.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/5.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/6.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/7.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/8.JPG"></div>
-      <div class="swiper-slide"><img src="images/365/9.JPG"></div>
+  <div class="box">
+    <h2>돌사진</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/365/1.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/2.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/3.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/4.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/5.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/6.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/7.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/8.jpg"></div>
+        <div class="swiper-slide"><img src="images/365/9.jpg"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    //swiper
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       loop: true,
