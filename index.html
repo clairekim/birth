@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서유/서진이의 첫생일</title>
+  <meta property="og:title" content="서유/서진이의 첫생일">
+  <meta property="og:description" content="서유와 서진이의 돌잔치, 머큐어 마곡 모아시스, 8월 10일 일요일 12:00PM">
+  <meta property="og:image" content="https://github.com/clairekim/birth/invitation.jpg">
+  <meta property="og:url" content="https://github.com/clairekim/birth.git">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+</head>
+
+<body>
+  <h1>서유와 서진이의 첫 생일</h1>
+  <p>서유와 서진이의 사진 구경하고 가세요</p>
+  <img src="./images/welcome.jpg">
+
+  <h2>뉴본</h2>
+
+  <h2>50일</h2>
+
+  <h2>100일</h2>
+
+  <h2>돌사진</h2>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+</body>
+
+</html>
