@@ -7,50 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서유/서진이의 첫생일</title>
   <meta property="og:title" content="서유/서진이의 돌잔치 초대장">
-  <meta property="og:description" content="8월10일 일요일 12:00 머큐어마곡 모아시스">
+  <meta property="og:description" content="8월 10일(일) 12:00 머큐어 마곡 모아시스">
   <meta property="og:image" content="images/welcome.jpg">
   <meta property="og:url" content="https://clairekim.github.io/birth/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <style>
+    body {
+      padding: 10px;
+      background-color: peachpuff;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
     img {
       max-width: 100%;
     }
+
+    .swiper {
+      margin-bottom: 5em;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+    }
+
+    .swiper-slide {
+      width: 100%;
+      aspect-ratio: 1 / 1.3;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+    }
   </style>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
-  </script>
 </head>
 
 <body>
   <h1>서유와 서진이의 첫 생일</h1>
-  <p>서유와 서진이의 사진 구경하고 가세요</p>
+  <p>2025년 8월 10일(일) 12:00 머큐어 마곡 모아시스<br>서유와 서진이의 성장사진 구경하고 가세요.</p>
 
   <h2>뉴본</h2>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
   <h2>50일</h2>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
   <h2>100일</h2>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/0/1.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/2.JPG"></div>
+      <div class="swiper-slide"><img src="images/0/3.JPG"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
   <h2>돌사진</h2>
   <!-- Slider main container -->
@@ -58,28 +109,42 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">Slide 1 <img src="images/365/1.JPG"></div>
-      <div class="swiper-slide">Slide 2 <img src="images/365/2.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/3.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/4.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/5.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/6.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/7.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/8.JPG"></div>
-      <div class="swiper-slide">Slide 3 <img src="images/365/9.JPG"></div>
-      ...
+      <div class="swiper-slide"><img src="images/365/1.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/2.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/3.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/4.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/5.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/6.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/7.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/8.JPG"></div>
+      <div class="swiper-slide"><img src="images/365/9.JPG"></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
-
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
 </body>
 
 </html>
